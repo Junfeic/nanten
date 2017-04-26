@@ -1,4 +1,4 @@
-# nanten
+# stapler-jelly-demo of nanten.cc
 The public technical resources contributed by nanten.cc
 This stapler-jelly-demo illustrates how stapler staple urls to jelly page or object method.
 
