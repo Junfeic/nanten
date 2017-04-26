@@ -1,5 +1,0 @@
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
-         xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-config.jelly resides on resources...BookStore
-    No config method in BookStore class, call method getMyString: ${it.myString}
-</j:jelly>

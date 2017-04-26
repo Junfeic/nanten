@@ -1,7 +1,0 @@
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
-         xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-index.jelly resides on resources...demo.person.Author. I'm going to take a self introduction:
-    ${it.name} 
-    ${it.gender}
-    ${it.birthday}
-</j:jelly>
