@@ -1,0 +1,7 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler">
+<html>
+
+	<h2>This is my Jelly index page in resources  BookStore.</h2>
+    ${it.myString}
+</html>
+</j:jelly>
