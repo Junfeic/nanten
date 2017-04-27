@@ -30,6 +30,7 @@ import java.util.Map;
 import com.gogbuy.stapler.demo.item.Book;
 import com.gogbuy.stapler.demo.item.CD;
 import com.gogbuy.stapler.demo.item.Item;
+import com.gogbuy.stapler.demo.item.Painting;
 
 /**
  * The root object serving the root URL /
@@ -59,6 +60,7 @@ public class BookStore {
 		Map<String, Item> items = new HashMap<String, Item>();
 		items.put("book", new Book("Brave heart"));
 		items.put("cd", new CD("Mozart"));
+		items.put("painting", new Painting("Monet",985000));
 		return items;
 	}
 
@@ -70,6 +72,9 @@ public class BookStore {
 	public Item getItem(String name) {
 		if(name == null || name.equals("")) {
 			return new Book("The Chaos Classics");
+		}
+		if("painting".equals(name)) {
+			return new Painting("Monet - "+name,985555);
 		}
 		if(name.startsWith("b")) {
 			return new Book(name);

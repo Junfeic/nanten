@@ -1,7 +1,7 @@
 1. Deploy the project to tomcat.
 2. Try following URLs and have a fun.
-   /                    | served by demo.BookStore/index.jelly and call bookStore.getMyString() whithin jelly page ${it.myString}
-   /config              | served by demo.BookStore/config.jelly and call bookStore.getMyString() whithin jelly page ${it.myString}
+   /                    | served by demo/BookStore/index.jelly and call bookStore.getMyString() whithin jelly page ${it.myString}
+   /config              | served by demo/BookStore/config.jelly and call bookStore.getMyString() whithin jelly page ${it.myString}
    /myString            | served by demo.BookStore/myString.jelly and call bookStore.getMyString() whithin jelly page ${it.myString}
    /noJelly             | served by bookStore.doNoJelly() and return a string to browser
    /items/book          | served by bookStore.getItems(), then a book object returned, then get demo/item/Book/index.jelly to display
@@ -13,7 +13,9 @@
    /items/cd/play       | served by bookStore.getItems(), then a cd object returned, then cd.doPlay() is called(no play.jelly nor any getPlay()), and return a string to browser
    /item/yundi          | served by bookStore.getItem(), then a cd object returned(not startWith("b")), then get demo/item/CD/index.jelly to display
    /item/yundi/play     | same as /items/cd/play
-
+   /item/painting       | served by bookStore.getItem(), then a painting object returned, and call parent item.doIndex()(No painting.doIndex() nor index.jelly within demo/item/Painting)
+   /item/painting/callparent       | served by bookStore.getItem(), then get demo/item/Painting/callparent.jelly to display, and call parent item.getPrice() within that page
+   
 
 The way Stapler works is some what like Expression Language; it takes an object and URL, then evaluate the URL against the object. It repeats this process until it hits either a static resource, a view (such as JSP, Jelly, Groovy, etc.), or an action method.
 

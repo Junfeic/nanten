@@ -24,37 +24,15 @@
 
 package com.gogbuy.stapler.demo.item;
 
-import com.gogbuy.stapler.demo.person.Author;
-
 /**
- * 
+ * This is to show how parent method or jelly page to
  * @author junho.chen@outlook.com
  *
  */
-public class Item {
+public class Painting extends Item {
 
-	private String title;
-	private double price;
-	
-	protected Author author;
-
-	protected String getTitle() {
-		return title;
-	}
-
-	protected void setTitle(String title) {
-		this.title = title;
-	}
-	
-	public String doIndex() {
-		return "Item doIndex()";
-	}
-
-	public double getPrice() {
-		return price;
-	}
-
-	public void setPrice(double price) {
-		this.price = price;
+	public Painting(String title, double price) {
+		setTitle(title);
+		setPrice(price);
 	}
 }

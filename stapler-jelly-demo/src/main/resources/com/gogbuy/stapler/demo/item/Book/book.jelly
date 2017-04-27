@@ -24,7 +24,7 @@ THE SOFTWARE.
 
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
          xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-This is book.jelly resides on resources...demo.Book. Detailes of this book:
+This is book.jelly resides on resources...demo/item/Book. Detailes of this book:
     The book ${it.title} is written by 
     Author: ${it.author.name}
     ${it.author}

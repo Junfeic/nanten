@@ -24,7 +24,7 @@ THE SOFTWARE.
 
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
          xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-index.jelly resides on resources...demo.CD
+This is index.jelly resides on resources...demo/item/CD
     Title: ${it.title}(The parent protected method was not visible here) 
     ${it.description}
     It can be played by ${it.player}

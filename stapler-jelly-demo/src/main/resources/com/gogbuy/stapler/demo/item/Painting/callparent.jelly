@@ -24,7 +24,7 @@ THE SOFTWARE.
 
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
          xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-This is book index.jelly resides on resources...demo/item/Book
-    book title:  ${it.title} 
-    book author: ${it.author}
+This is callparent.jelly resides on resources...demo/item/Painting
+    Title: ${it.title}(The parent protected method was invisible here) 
+    Price: ${it.price}(Visible parent public method) 
 </j:jelly>
