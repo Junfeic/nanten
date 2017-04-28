@@ -26,6 +26,19 @@ THE SOFTWARE.
          xmlns:t="/lib/hudson" xmlns:f="/lib/form">
 <html>         
 This is <b>config.jelly</b> resides on resources...BookStore <br />
-    No config method in BookStore class, this page calls method getMyString: ${it.myString}
-</html>    
+    No config method in BookStore class, this page calls method getMyString: ${it.myString} <br />
+</html>
+
+<!--
+Following segment requires /lib/form taglib and hudson.util.jelly package.
+Otherwise it will show
+ <f:entry xmlns:f="/lib/form" title="Requested URL" field="url"><f:textbox></f:textbox></f:entry><f:entry xmlns:f="/lib/form" title="Value" field="info"><f:textbox></f:textbox></f:entry>
+-->
+    <f:entry title="Requested URL" field="url">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="Value" field="info">
+        <f:textbox />
+    </f:entry>
+  
 </j:jelly>

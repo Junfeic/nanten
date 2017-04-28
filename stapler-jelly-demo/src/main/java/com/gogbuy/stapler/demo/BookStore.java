@@ -27,8 +27,11 @@ package com.gogbuy.stapler.demo;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.kohsuke.stapler.StaplerFallback;
+
 import com.gogbuy.stapler.demo.item.Book;
 import com.gogbuy.stapler.demo.item.CD;
+import com.gogbuy.stapler.demo.item.DefaultItem;
 import com.gogbuy.stapler.demo.item.Item;
 import com.gogbuy.stapler.demo.item.Painting;
 
@@ -37,7 +40,7 @@ import com.gogbuy.stapler.demo.item.Painting;
  * @author junho.chen@outlook.com
  *
  */
-public class BookStore {
+public class BookStore implements StaplerFallback {
 
 	/**
 	 * Stores various objects scoped to {@link BookStore}
@@ -80,5 +83,11 @@ public class BookStore {
 			return new Book(name);
 		}
 		return new CD(name);
+	}
+
+	@Override
+	public Object getStaplerFallback() {
+		// TODO Auto-generated method stub
+		return new DefaultItem();
 	}
 }
