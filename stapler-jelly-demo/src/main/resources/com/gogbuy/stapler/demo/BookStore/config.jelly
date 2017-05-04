@@ -27,7 +27,6 @@ THE SOFTWARE.
 <html>         
 This is <b>config.jelly</b> resides on resources...BookStore <br />
     No config method in BookStore class, this page calls method getMyString: ${it.myString} <br />
-</html>
 
 <!--
 Following segment requires /lib/form taglib and hudson.util.jelly package.
@@ -40,5 +39,6 @@ Otherwise it will show
     <f:entry title="Value" field="info">
         <f:textbox />
     </f:entry>
+</html>
   
 </j:jelly>
